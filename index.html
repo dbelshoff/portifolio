@@ -11,10 +11,7 @@
 
 
 <body>
-    <header>
-        <!-- <h1>Diogo Belshoff</h1>-->
-
-    </header>
+    <header></header>
     <nav>
         <ul id="menu">
             <li><a href=#home>Home</a></li>
@@ -137,7 +134,6 @@
             </div>
         </section>
 
-
         <section id="contatos">
             <div id="contatos">
                 <h1 id="titulo2">Contatos</h1><br>
@@ -201,18 +197,11 @@
             </div>
         </section>
 
-
-
-
-
-
-
     </main>
 
     <footer>
         <h1>&copy; 2023 by Diogo Belshoff</h1>
     </footer>
-
 
     <script>
         window.onscroll = function () {
@@ -221,30 +210,25 @@
 
         function scrollFunction() {
             var navbar = document.querySelector('nav');
-            var navLinks = document.querySelectorAll('nav a'); // Selecione todos os links dentro da nav
+            var navLinks = document.querySelectorAll('nav a');
 
             if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
-                // Quando o usuário rolar para baixo
                 navbar.style.backgroundColor = 'white';
                 navbar.style.top = '0';
 
-                // Altera a cor do texto para preto
                 for (var i = 0; i < navLinks.length; i++) {
                     navLinks[i].style.color = 'black';
                 }
             } else {
-                // Quando o usuário estiver no topo da página
                 navbar.style.backgroundColor = 'transparent';
                 navbar.style.top = '15px';
 
-                // Mantém a cor original do texto
                 for (var i = 0; i < navLinks.length; i++) {
                     navLinks[i].style.color = 'white';
                 }
             }
         }
     </script>
-
 
 </body>
 
